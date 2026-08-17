@@ -39,18 +39,25 @@
 
       <div class="project-content">
 
-        <h2>The problem</h2>
-
-        <p>
-          Finance journals were being prepared through a repetitive,
-          spreadsheet-heavy process involving manual data manipulation,
-          checking and reformatting.
-        </p>
-
-        <p>
-          On larger journals, the process could take several hours and relied
-          heavily on the user knowing exactly what to do at each stage.
-        </p>
+        <h2>The problem</h2> 
+        <p> The source finance data and the journal upload template use different structures.
+          The input file contains one set of fields and formats, while the uploader expects a
+          different schema, column order and set of values. </p>
+        <p> Preparing the journal therefore involves transforming and mapping the source data,
+          applying business rules to populate the required fields, and validating the result
+          before it can be uploaded. 
+        
+        </p> 
+        <div class="comparison"> <div> <img src="data_headers.png" alt="Example of the source finance data structure">
+          <p class="caption">Source data structure</p> </div>
+          <div> 
+            <img src="journal-output.png" alt="Example of the required journal upload structure"> 
+            <p class="caption">Required journal upload structure</p>
+          </div> 
+        </div> 
+        <p> On larger journals, carrying out those transformations manually could take several hours
+          and relied on the user knowing how each source field should be interpreted, transformed
+          and represented in the final upload file. </p>
 
 
         <h2>What I built</h2>
