@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +22,8 @@
     </p>
 
     <p class="intro">
-      A Python-based internal tool designed to automate and standardise
-      a previously manual finance journal preparation process.
+      A Python-based internal tool that turns a repetitive, spreadsheet-heavy
+      finance process into a faster, guided workflow.
     </p>
   </header>
 
@@ -42,58 +43,74 @@
         <h2>The problem</h2>
 
         <p>
-          Preparing finance journals involved repetitive manipulation of
-          transaction data, multiple manual checks and a number of decisions
-          that had to be repeated each time the process was carried out.
+          Finance journals were being prepared through a repetitive,
+          spreadsheet-heavy process involving manual data manipulation,
+          checking and reformatting.
         </p>
 
         <p>
-          On larger journals this could take several hours and created
-          opportunities for inconsistent processing and manual error.
+          On larger journals, the process could take several hours and relied
+          heavily on the user knowing exactly what to do at each stage.
         </p>
 
 
-        <h2>The solution</h2>
+        <h2>What I built</h2>
 
         <p>
-          I designed and built JournalWings as a reusable Python application
-          that takes source financial data and converts it into structured
-          journal outputs using defined business rules.
+          I built JournalWings to turn that process into a guided workflow.
         </p>
 
         <p>
-          The application applies automated transformations, validation and
-          consistency checks before producing the final output, reducing the
-          amount of transaction data users need to manipulate directly.
+          The user loads the source files, chooses the type of journal they need,
+          and the application handles the underlying transformations, validation
+          and business rules before producing the structured output.
+        </p>
+
+        <p>
+          The aim was not just to make the process faster. It was to make it
+          harder to do inconsistently.
         </p>
 
 
         <h2>How it works</h2>
 
         <p>
-          The user loads the required source files, selects the appropriate
-          journal workflow and runs the process through a guided interface.
+          JournalWings takes the source financial data and processes it according
+          to the selected workflow. It applies the relevant rules, checks for
+          common issues and prepares the output without requiring the user to
+          manually reshape the transaction data themselves.
         </p>
 
         <p>
-          JournalWings then processes the source data, applies the relevant
-          rules and validation checks, and generates the required structured
-          output for the next stage of the finance workflow.
+          I designed it as a reusable application rather than a one-off script,
+          so the same interface can support multiple journal scenarios.
         </p>
 
 
         <h2>Impact</h2>
 
         <p>
-          JournalWings reduces repetitive manual handling, improves consistency
-          and traceability, and saves several hours of processing time on
-          larger journal workflows.
+          On larger workflows, JournalWings cuts several hours of manual
+          processing down to a much shorter guided process.
         </p>
 
         <p>
-          Rather than being built as a single-purpose script, the application
-          was designed as a reusable workflow tool capable of supporting
-          multiple journal scenarios.
+          It also reduces repetitive handling, makes outputs more consistent and
+          gives users clearer feedback when something needs attention.
+        </p>
+
+
+        <h2>Why I built it</h2>
+
+        <p>
+          This project came from seeing a process that was technically working,
+          but depended on too much manual effort and too much tacit knowledge.
+        </p>
+
+        <p>
+          I wanted to see whether I could take that knowledge, turn it into
+          explicit rules, and build a tool that made the workflow easier for
+          someone else to follow.
         </p>
 
 
@@ -107,21 +124,6 @@
           <span>Business Rules</span>
           <span>Workflow Automation</span>
         </div>
-
-
-        <h2>Design approach</h2>
-
-        <p>
-          The focus was not simply on automating individual spreadsheet steps.
-          I wanted to turn the overall process into a guided workflow that
-          reduced the number of manual decisions required from the user.
-        </p>
-
-        <p>
-          Validation and business rules are applied within the application so
-          that potential issues can be identified earlier in the process rather
-          than after journal outputs have already been prepared.
-        </p>
 
       </div>
 
@@ -143,3 +145,4 @@
 
 </body>
 </html>
+```
