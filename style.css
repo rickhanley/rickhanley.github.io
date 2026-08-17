@@ -138,38 +138,53 @@ a {
   background: var(--accent-dark);
 }
 
-/* JournalWings input/output comparison */
+/* JournalWings input/output transformation */
 
 .comparison {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 100%;
   margin: 28px 0;
 }
 
 .comparison-item {
+  width: 100%;
   margin: 0;
-  min-width: 0;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 .comparison-title {
   display: block;
+  margin-bottom: 10px;
   font-weight: 700;
-  margin-bottom: 8px;
   color: var(--text);
 }
 
-.comparison-item img {
+.comparison-image {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
   border: 1px solid var(--border);
   border-radius: 8px;
+}
+
+.transform-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 20px 0;
+  color: var(--accent);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.transform-arrow span {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 footer {
@@ -195,8 +210,22 @@ footer {
   .project-image {
     padding: 10px;
   }
+}
 
-  .comparison {
-    grid-template-columns: 1fr;
-  }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 20px 0 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
