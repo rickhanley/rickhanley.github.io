@@ -57,3 +57,7 @@ a {
 .project-content {
   padding: 18px 20px 20px;
 }
+
+.project-content h3 {
+  margin-top: 0;
+}
