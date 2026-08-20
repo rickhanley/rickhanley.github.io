@@ -4,193 +4,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>FileFlow | Richard Hanley</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <header>
-
-    <p>
-      <a href="index.html">← Back to portfolio</a>
-    </p>
-
+    <p><a href="index.html">&larr; Back to portfolio</a></p>
     <h1>FileFlow</h1>
-
-    <p class="tagline">
-      Guided Document Workflow
-    </p>
-
+    <p class="tagline">Guided project document filing</p>
     <p class="intro">
-      A Python-based desktop tool that turns inconsistent document naming
-      and filing into a guided, repeatable workflow for non-technical users.
+      A local Python application that turns an existing folder structure and
+      naming convention into a simple drag-and-drop filing workflow.
     </p>
-
   </header>
 
-
   <main>
-
     <section class="project">
-
-      <!-- HERO IMAGE -->
-
       <div class="project-image">
-
-        <img
-          src="fileflow.png"
-          alt="FileFlow document workflow application"
-        >
-
+        <img src="Fileflow.png" alt="FileFlow document workflow application">
       </div>
-
 
       <div class="project-content">
-
-
-        <!-- PROBLEM -->
-
         <h2>The problem</h2>
-
         <p>
-          Document naming and filing relied on users repeatedly deciding how
-          files should be named and where they should be stored.
+          Naming a project document correctly can mean remembering the client,
+          project, document type, version format and destination folder.
         </p>
-
         <p>
-          The underlying rules were consistent, but they were being applied
-          manually. That made the process slower than it needed to be and
-          created opportunities for inconsistent naming, misplaced files and
-          avoidable rework.
+          Even with a documented convention, that creates repeated decisions,
+          inconsistent filenames and occasional misfiling.
         </p>
-
-
-        <!-- WHAT I BUILT -->
 
         <h2>What I built</h2>
-
         <p>
-          I built FileFlow to turn those rules into a guided workflow.
+          I built FileFlow to turn those rules into a guided workflow for
+          consistent project documents.
+        </p>
+        <p>
+          FileFlow uses the destination folder as structured context. It
+          combines project details, document type and configurable naming
+          rules to suggest a suitable filename.
+        </p>
+        <p>
+          Users retain final control: they can review and edit the suggestion
+          before the document is filed.
         </p>
 
+        <h2>The workflow</h2>
         <p>
-          Users drag files into the application and FileFlow uses folder
-          context, configurable rules and validation logic to determine the
-          appropriate naming and destination.
+          1. The user selects a project and drops a file onto its destination
+          folder.
+        </p>
+        <p>
+          2. FileFlow offers the relevant document types and generates a
+          suggested filename from the folder path.
+        </p>
+        <p>
+          3. The user reviews the name, makes any required edits, and files
+          the document.
         </p>
 
+        <h2>Built-in safeguards</h2>
         <p>
-          The aim was to remove repetitive decisions from the user while still
-          keeping the workflow transparent and easy to control.
+          FileFlow validates filenames, checks for duplicates and restricts
+          filing to configured destinations. The review step keeps the process
+          straightforward without hiding important decisions from the user.
         </p>
-
-
-        <!-- HOW IT WORKS -->
-
-        <h2>How it works</h2>
-
-        <p>
-          FileFlow reads the context of the files being processed and applies
-          the relevant naming and filing rules automatically.
-        </p>
-
-        <p>
-          Instead of requiring users to remember conventions or manually
-          reconstruct filenames, the application guides them through the
-          process and applies consistent logic before files are moved or
-          renamed.
-        </p>
-
-        <p>
-          Safeguards and validation checks are built into the workflow to
-          reduce the risk of incorrect naming or file placement.
-        </p>
-
-
-        <!-- DEMO -->
-
-        <h2>Demo</h2>
-
-        <div class="video-wrapper">
-          <iframe
-            src="YOUR_YOUTUBE_EMBED_URL_HERE"
-            title="FileFlow demo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-
-        <!-- IMPACT -->
 
         <h2>Impact</h2>
-
         <p>
-          FileFlow turns a loosely defined manual task into a consistent,
-          repeatable process that is easier for non-technical users to follow.
+          FileFlow reduces repetitive typing and removes the need for users to
+          memorise detailed naming conventions. The result is more consistent
+          document handling across projects, while users retain final control
+          over each file.
         </p>
-
-        <p>
-          It reduces the number of decisions users need to make, improves
-          consistency across document handling and helps prevent common naming
-          and filing errors.
-        </p>
-
-
-        <!-- WHY I BUILT IT -->
 
         <h2>Why I built it</h2>
-
         <p>
-          The process worked, but too much of it depended on people remembering
-          conventions and making the same small decisions again and again.
+          I built FileFlow after seeing how much reliable filing depended on
+          people remembering small details correctly, repeatedly. I wanted to
+          see whether the folder structure could carry more of that burden, so
+          users could focus on the document rather than the mechanics of naming
+          and organising it.
         </p>
-
         <p>
-          FileFlow was an experiment in moving those decisions into the tool
-          itself, so the user could concentrate on the task rather than the
-          mechanics of naming and organising files.
+          This was not a problem that needed a full document-management system.
+          The existing folder structure already worked; the friction was in
+          applying naming and filing conventions consistently. FileFlow is
+          deliberately lightweight: it supports that process without adding a
+          new repository, complex permissions model or another system for users
+          to learn.
         </p>
-
-
-        <!-- TECHNOLOGY -->
 
         <h2>Technology</h2>
-
         <div class="tech">
           <span>Python</span>
-          <span>Desktop UI</span>
-          <span>File Handling</span>
-          <span>Validation Logic</span>
-          <span>Configurable Rules</span>
-          <span>Workflow Design</span>
+          <span>Flask</span>
+          <span>Local file handling</span>
+          <span>Validation logic</span>
+          <span>Configurable rules</span>
+          <span>Workflow design</span>
         </div>
-
       </div>
-
     </section>
-
   </main>
 
-
   <footer>
-
     <p>
-      <a href="index.html">← Portfolio</a>
-      ·
+      <a href="index.html">&larr; Portfolio</a>
+      &middot;
       <a href="#">GitHub</a>
-      ·
+      &middot;
       <a href="#">LinkedIn</a>
-      ·
+      &middot;
       <a href="mailto:rick_hanley_11@hotmail.com">Email</a>
     </p>
-
   </footer>
-
 </body>
 
 </html>
