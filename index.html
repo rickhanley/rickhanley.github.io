@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Richard Hanley | Automation & Internal Tools</title>
+  <title>Richard Hanley | Automation &amp; Internal Tools</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +11,7 @@
 
   <header>
     <h1>Richard Hanley</h1>
-    <p class="tagline">Automation & Internal Tools | Python | Workflow Design</p>
+    <p class="tagline">Automation &amp; Internal Tools | Python | Workflow Design</p>
 
     <p class="intro">
       I build practical tools that reduce repetitive work, improve data quality
@@ -27,42 +27,25 @@
       <div class="project">
 
         <div class="project-image">
-            <img
-              src="JW.png"
-              alt="JournalWings finance workflow automation application"
-            >
+          <img
+            src="JW.png"
+            alt="JournalWings finance workflow automation application"
+          >
         </div>
 
         <div class="project-content">
           <h3>JournalWings</h3>
 
           <p class="project-summary">
-            A Python-based finance workflow application that automates and
-            standardises a previously manual journal preparation process.
-          </p>
-
-          <h4>The problem</h4>
-          <p>
-            Preparing finance journals involved repetitive manipulation of
-            transaction data, multiple manual checks and significant processing
-            time on larger workflows.
-          </p>
-
-          <h4>The solution</h4>
-          <p>
-            JournalWings transforms source data using defined business rules,
-            applies automated validation and consistency checks, and produces
-            structured journal outputs ready for the next stage of the process.
-          </p>
-
-          <h4>Impact</h4>
-          <p>
-            Reduced repetitive manual handling, improved consistency and
-            traceability, and saved several hours on larger journal workflows.
+            JournalWings turns a repetitive, spreadsheet-heavy finance process into a guided Python workflow.
+            It transforms source transaction data into the structure required by a journal upload template.
+            The relevant business rules are built directly into the application, so mappings, calculations and validations are applied consistently.
+            An audit log records the processing context, helping explain the journal later if it is queried downstream.
+            Larger workflows that once took hours can be prepared in minutes, with more consistent and traceable results.
           </p>
 
           <p class="tech">
-            Python · Excel · openpyxl · Data Validation · Workflow Automation
+            Python &middot; Excel &middot; openpyxl &middot; Data Validation &middot; Workflow Automation
           </p>
 
           <a href="journalwings.html" class="button">View Project</a>
@@ -70,67 +53,32 @@
 
       </div>
 
-
       <div class="project">
 
         <div class="project-image">
           <img
-              src="Fileflow.png"
-              alt="Fileflow guided filing workflow app"
-            >
+            src="Fileflow.png"
+            alt="Fileflow guided filing workflow app"
+          >
         </div>
 
         <div class="project-content">
-  <h3>FileFlow</h3>
+          <h3>FileFlow</h3>
 
-<p class="project-summary">
-  Imagine if Windows Explorer could use a configured set of rules to interpret
-  where a file is being saved, then suggest a meaningful filename. FileFlow
-  does exactly that: it maps a team's existing folder hierarchy—however simple
-  or complex—to the information needed for consistent filenames in a
-  drag-and-drop workflow.
-</p>
+          <p class="project-summary">
+            FileFlow uses an existing folder hierarchy as structured context for naming and filing documents.
+            When folders have been designed well, the file path can provide all the information needed to generate a meaningful filename automatically, often without any user edits.
+            Users can still review or adjust the suggestion before saving, while validation checks, duplicate detection and configured destinations help prevent common filing errors.
+            The workflow reduces the need to memorise detailed naming conventions and removes much of the repeated typing involved in manual filing.
+            The result is a lightweight, explainable way to bring document-management consistency to an existing folder structure.
+          </p>
 
-<h4>The problem</h4>
-<p>
-  In large project structures, consistent document naming often depends on users
-  repeatedly interpreting folder locations, applying naming conventions and
-  entering the same project information manually. Even where good conventions
-  exist, they can be difficult to apply consistently across many users, projects
-  and document types.
-</p>
+          <p class="tech">
+            Python &middot; Desktop UI &middot; File System Context &middot; Validation Logic &middot; Workflow Automation
+          </p>
 
-<h4>The solution</h4>
-<p>
-  FileFlow uses the destination folder path as structured context. Where folder
-  structures are designed consistently, the application can extract project and
-  document information automatically, combine it with configurable naming rules
-  and generate a meaningful filename with minimal user input.
-</p>
-
-<p>
-  The user simply drags in a file, chooses where it belongs and reviews the
-  suggested filename before saving. FileFlow removes the need for users to
-  remember and manually apply numerous fiddly naming conventions, while still
-  giving them the final say over the filename. The underlying rules provide a
-  document-management level of consistency without making the user responsible
-  for knowing the full convention themselves.
-</p>
-
-<h4>Impact</h4>
-<p>
-  Reduced repeated typing and manual interpretation, improved naming consistency
-  across different document types and project repositories, and embedded
-  structured document-management practices into a simple drag-and-drop interface.
-</p>
-
-<p class="tech">
-  Python · Desktop UI · File System Context · Validation Logic · Workflow Automation
-</p>
-
-<a href="fileflow.html" class="button">View Project</a>
-
-      </div>
+          <a href="fileflow.html" class="button">View Project</a>
+        </div>
 
       </div>
 
@@ -138,60 +86,20 @@
 
         <div class="project-image">
           <img
-              src="quicktask.png"
-              alt="Quicktask grants operations dashboard"
-            >
+            src="quicktask.png"
+            alt="Quicktask grants operations dashboard"
+          >
         </div>
 
         <div class="project-content">
           <h3>Quicktask</h3>
 
           <p class="project-summary">
-            Quicktask is a tailored grants-operations workspace that brings
-            applications, live projects, tasks, reporting deadlines and
-            portfolio priorities into one place. It is designed around the
-            real data, controls and recurring decisions of a specific working
-            environment—because that is where a general-purpose task tool tends
-            to fall short.
-          </p>
-
-          <h4>The problem</h4>
-          <p>
-            Grants operations information is often spread across finance-system
-            reports, spreadsheets, email, individual task lists and project
-            records. Keeping track of deadlines, active work, reporting
-            requirements and portfolio risks can require repeated manual
-            checking and reconciliation.
-          </p>
-
-          <h4>The solution</h4>
-          <p>
-            Quicktask ingests the latest available snapshot data from portfolio
-            reports and combines it with user-managed applications, projects
-            and tasks. Its dashboard gives users current information for their
-            day-to-day analysis, alongside upcoming deadlines, active work and
-            portfolio priorities linked back to the underlying records.
-          </p>
-          <p>
-            In grants operations, as in many administrative fields, a query can
-            change shape as the work progresses. A task may begin as a simple
-            question, then involve checking data, contacting colleagues,
-            recording a decision, resolving an exception or planning the next
-            action.
-          </p>
-          <p>
-            Quicktask makes it easier to leave that context with the work
-            itself. By keeping updates, decisions and next actions alongside
-            the relevant application, project or task, it creates a practical
-            breadcrumb trail for the person doing the work now—and for anyone
-            who needs to understand it later.
-          </p>
-
-          <h4>Impact</h4>
-          <p>
-            A single, practical view of operational work: less manual chasing,
-            clearer priorities and a more reliable way to manage a complex
-            grants portfolio without forcing it into a generic workflow.
+            Quicktask is a tailored workspace for managing grants operations in one connected place.
+            It combines portfolio snapshots with applications, projects, tasks, reporting deadlines and priorities.
+            The dashboard helps users identify current work, upcoming deadlines and issues that need attention.
+            Updates, decisions and next actions stay alongside the relevant records, creating a useful trail of operational context.
+            Built with Python, Flask and SQLite, Quicktask is designed around the real data and recurring decisions of a specific working environment.
           </p>
 
           <p class="tech">
@@ -205,21 +113,20 @@
 
     </section>
 
-
     <section>
       <h2>About</h2>
 
       <p>
-        I work in research finance in a large university environment, 
-        managing complex funding, financial and compliance workflows. 
-        Alongside that role, I build automation and internal tools to 
+        I work in research finance in a large university environment,
+        managing complex funding, financial and compliance workflows.
+        Alongside that role, I build automation and internal tools to
         reduce repetitive work, improve data quality and make difficult
         operational processes easier to use.
 
-        My earlier background includes almost ten years in project cost 
-        control within international engineering. I’m now increasingly 
-        focused on Python, workflow automation, AI-assisted tools and 
-        practical software that solves real operational problems
+        My earlier background includes almost ten years in project cost
+        control within international engineering. I am now increasingly
+        focused on Python, workflow automation, AI-assisted tools and
+        practical software that solves real operational problems.
       </p>
     </section>
 
@@ -228,9 +135,9 @@
   <footer>
     <p>
       <a href="https://github.com/rickhanley" target="_blank" rel="noopener noreferrer">GitHub</a>
-      ·
+      &middot;
       <a href="https://www.linkedin.com/in/richard-hanley-2025-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      ·
+      &middot;
       <a href="mailto:rick_hanley_11@hotmail.com">Email</a>
     </p>
   </footer>
