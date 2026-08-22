@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Call Assessor | Richard Hanley</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <p><a href="index.html">&larr; Back to portfolio</a></p>
+    <h1>Grant Call Assessor</h1>
+    <p class="tagline">AI-assisted funding opportunity assessment</p>
+    <p class="intro">
+      A prototype that combines a PI profile with current funding opportunities
+      to identify relevant calls and produce a focused assessment.
+    </p>
+  </header>
+
+  <main>
+    <section class="project">
+      <div class="project-content">
+        <h2>The starting point</h2>
+        <p>
+          The project grew from a real operational need. A professor approached
+          me about whether AI could help researchers assess funding calls more
+          quickly and consistently, particularly when identifying eligibility,
+          key requirements and fit.
+        </p>
+
+        <h2>The problem</h2>
+        <p>
+          Researchers and research support teams can spend significant time
+          scanning funding opportunities that may not fit a particular PI’s
+          expertise, career stage, eligibility or strategic priorities. The
+          relevant information is spread across profile pages, funder listings
+          and detailed call documents.
+        </p>
+
+        <h2>What I developed</h2>
+        <p>
+          I developed Grant Call Assessor as a prototype workflow for turning
+          that search into a more structured assessment. It takes a PI profile
+          URL, identifies current UKRI opportunities, applies deterministic
+          triage rules, enriches shortlisted calls and uses Gemini for
+          higher-level fit assessment and proposal ideas.
+        </p>
+
+        <h2>How it works</h2>
+        <ol>
+          <li>A PI profile URL is submitted to the application.</li>
+          <li>The profile is generated or reused as structured data.</li>
+          <li>Current UKRI opportunities are scraped and cached.</li>
+          <li>Explicit rules filter and prioritise the opportunities.</li>
+          <li>Full call details are extracted for the shortlist.</li>
+          <li>Optional AI stages assess fit and draft proposal ideas.</li>
+          <li>The workflow produces structured reports and exportable artefacts.</li>
+        </ol>
+
+        <h2>Deterministic and AI-assisted</h2>
+        <p>
+          The first pass is rules-based, so the filtering remains explicit and
+          inspectable. AI is used later for nuanced assessment and drafting,
+          where a richer interpretation of the shortlisted information is
+          useful.
+        </p>
+
+        <h2>Prototype scope</h2>
+        <p>
+          The current prototype has one live end-to-end funder pipeline: UKRI.
+          The public demonstration uses a synthetic Alex Morgan profile and is
+          intended to show the workflow rather than represent a production
+          service.
+        </p>
+
+        <h2>Development approach</h2>
+        <p>
+          I defined the workflow, data structures, rules and report outputs,
+          then developed and refined the application iteratively with extensive
+          AI assistance during implementation.
+        </p>
+
+        <h2>Technology</h2>
+        <div class="tech">
+          <span>Python</span>
+          <span>Web scraping</span>
+          <span>UKRI data</span>
+          <span>Rule-based triage</span>
+          <span>Gemini API</span>
+          <span>Structured reports</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">&larr; Portfolio</a>
+      &middot;
+      <a href="https://github.com/rickhanley" target="_blank" rel="noopener noreferrer">GitHub</a>
+      &middot;
+      <a href="https://www.linkedin.com/in/richard-hanley-2025-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      &middot;
+      <a href="mailto:rick_hanley_11@hotmail.com">Email</a>
+    </p>
+  </footer>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "26ade3a712884b538fa147315e4c90e7"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+
+</html>
