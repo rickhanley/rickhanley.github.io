@@ -66,7 +66,8 @@ a {
 .intro {
   margin-top: 1.5rem;
   font-size: 1.08rem;
-  color: var(--muted);
+  color: #111111;
+  font-weight: 600;
   max-width: 680px;
 }
 
@@ -98,20 +99,29 @@ a {
 }
 
 .project-content {
-  padding: 24px 26px 28px;
+  padding: 26px 26px 24px;
 }
 
-.project-summary {
+.project-lede {
   font-size: 1.05rem;
   color: var(--muted);
   margin-top: 0;
 }
 
+.project-writeup {
+  padding: 24px 26px 28px;
+  border-top: 1px solid var(--border);
+}
+
+.project-writeup p:first-child {
+  margin-top: 0;
+}
+
 .tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 20px;
+  margin: 20px 0 0;
+  color: var(--accent-dark);
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .tech span {
