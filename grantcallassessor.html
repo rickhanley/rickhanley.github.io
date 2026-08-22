@@ -28,10 +28,11 @@
       <div class="project-content">
         <h2>The starting point</h2>
         <p>
-          The project grew from a real operational need. A professor approached
-          me about whether AI could help researchers assess funding calls more
-          quickly and consistently, particularly when identifying eligibility,
-          key requirements and fit.
+          Researchers often have to work through lengthy and inconsistent
+          funding call information to judge whether an opportunity is genuinely
+          relevant. A professor approached me about whether AI could help make
+          that initial assessment faster and more consistent, particularly
+          around eligibility, key requirements and research fit.
         </p>
 
         <h2>The problem</h2>
@@ -46,20 +47,20 @@
         <h2>What I developed</h2>
         <p>
           I developed Grant Call Assessor as a prototype workflow for turning
-          that search into a more structured assessment. It takes a PI profile
-          URL, identifies current UKRI opportunities, applies deterministic
-          triage rules, enriches shortlisted calls and uses Gemini for
-          higher-level fit assessment and proposal ideas.
+          that search into a structured assessment. It combines a PI profile
+          with current UKRI opportunities, applies deterministic triage rules,
+          enriches shortlisted calls with fuller detail, and then uses Gemini
+          for more nuanced fit assessment and proposal ideas.
         </p>
 
         <h2>How it works</h2>
         <ol>
           <li>A PI profile URL is submitted to the application.</li>
-          <li>The profile is generated or reused as structured data.</li>
+          <li>The PI profile is converted into structured data, or reused if already available.</li>
           <li>Current UKRI opportunities are scraped and cached.</li>
           <li>Explicit rules filter and prioritise the opportunities.</li>
           <li>Full call details are extracted for the shortlist.</li>
-          <li>Optional AI stages assess fit and draft proposal ideas.</li>
+          <li>Optional AI stages assess fit and generate proposal concepts.</li>
           <li>The workflow produces structured reports and exportable artefacts.</li>
         </ol>
 
@@ -72,7 +73,7 @@
           The rules can also identify obvious career-stage mismatches, such as
           independence or career-restart schemes aimed at earlier-career
           researchers. AI is used afterwards for more nuanced assessment and
-          proposal drafting.
+          proposal concept generation.
         </p>
 
         <h2>Prototype scope</h2>
